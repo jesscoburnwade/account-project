@@ -21,5 +21,9 @@ public class AddingAndRecieving {
 	public void gettingAccounts(Accounts accountToGet) {
 		accountsMap.get(counter);
 	}
+	
+	public Map<Integer, Accounts> returnMap() {
+		return accountsMap;
+	}
 
 }
