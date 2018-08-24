@@ -12,11 +12,12 @@ public class AccountApp {
 		AddingAndRecieving addOrGetAccount = new AddingAndRecieving();
 		Accounts john = new Accounts("John", "Smith", 1234);
 		Accounts joe = new Accounts("Joe", "Bloggs", 1235);
+		Accounts doe = new Accounts("John", "Doe", 1236);
 		
 		Map<Integer, Accounts> printMap = addOrGetAccount.returnMap();
 		addOrGetAccount.addingAccounts(john);
 		addOrGetAccount.addingAccounts(joe);
-		addOrGetAccount.gettingAccounts(john);
+		addOrGetAccount.addingAccounts(doe);
 		
 		JSONObject json = new JSONObject(printMap);
 		System.out.println(json);
