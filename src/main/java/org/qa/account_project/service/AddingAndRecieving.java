@@ -26,7 +26,7 @@ public class AddingAndRecieving {
 		return accountsMap;
 	}
 
-	public int getNumber(String firstName) {
+	public int getNumberofAccouuntsWithThisName(String firstName) {
 		int counter = 0;
 		for (Accounts account : accountsMap.values()) {
 			if (account.getFirstName().equals(firstName)) {
